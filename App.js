@@ -166,6 +166,7 @@ function HomeScreen({ navigation }) {
   const [userLocation, setUserLocation] = useState(null);
   const [language, setLanguage] = useState('en');
   const t = translations[language];
+  const { logout } = useContext(AuthContext); // <-- Add this line
 
   useEffect(() => {
     (async () => {
@@ -232,6 +233,20 @@ function HomeScreen({ navigation }) {
       <Text style={styles.locationText}>
         📍 {address ? address : 'Fetching location...'}
       </Text>
+
+      {/* --- Add Logout Button Here --- */}
+      <TouchableOpacity
+        style={{
+          marginTop: 30,
+          backgroundColor: '#e74c3c',
+          paddingHorizontal: 24,
+          paddingVertical: 12,
+          borderRadius: 8,
+        }}
+        onPress={logout}
+      >
+        <Text style={{ color: '#fff', fontWeight: 'bold', fontSize: 16 }}>Logout</Text>
+      </TouchableOpacity>
     </View>
   );
 }
