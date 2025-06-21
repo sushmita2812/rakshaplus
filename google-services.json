@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "519178092956",
+    "project_id": "rakshaplus-c5f2f",
+    "storage_bucket": "rakshaplus-c5f2f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519178092956:android:cbae6e4b163501f93f4859",
+        "android_client_info": {
+          "package_name": "infiniteloopers.com.raksha.plus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLgCKeiEtHG4kxHJkQfBgx4Vty0BM_m6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
